@@ -11,5 +11,5 @@ def find_all_users_name(data: dict)->list:
     """
     user_name=[]
     for n in range(len(data['messages'])):
-        user_name.append(data['messages'][n]["actor"])
+        user_name.append(data['messages'][n]["actor"]) or user_name.append(data['messages'][n]["from"])
     return user_name

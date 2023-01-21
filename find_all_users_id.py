@@ -11,5 +11,5 @@ def find_all_users_id(data: dict)->list:
     """
     user_id=[]
     for i in range(len(data['messages'])):
-        user_id.append(data['messages'][i]["actor_id"])
+        user_id.append(data['messages'][i]["actor_id"]) or user_id.append(data['messages'][i]["from_id"])
     return user_id
