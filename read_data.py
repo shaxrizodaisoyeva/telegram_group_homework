@@ -12,7 +12,7 @@ def read_data(file_path: str)->dict:
     #open file
     encoding="UTF8"
     f=open(file_path).read()
-    read_data=json.loads(f)
-    return read_data
+    data=json.loads(f)
+    return data
 file_path='data/result.json'
 print(read_data(file_path))
