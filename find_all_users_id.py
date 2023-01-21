@@ -10,6 +10,6 @@ def find_all_users_id(data: dict)->list:
         list: List containing all the users id
     """
     user_id=[]
-    for id in range(len(data['messages'])):
-        user_id.append(data['messages'][id]['actor_id'])
+    for i in range(len(data['messages'])):
+        user_id.append(data['messages'][i]["actor_id"])
     return user_id

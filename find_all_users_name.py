@@ -10,6 +10,6 @@ def find_all_users_name(data: dict)->list:
         list: List containing all the users name.
     """
     user_name=[]
-    for name in range(len(data['messages'])):
-        user_name.append(data['messages'][name]['actor'])
+    for n in range(len(data['messages'])):
+        user_name.append(data['messages'][n]["actor"])
     return user_name
