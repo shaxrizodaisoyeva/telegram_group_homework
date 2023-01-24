@@ -19,6 +19,8 @@ def find_all_users_id(data: dict)->list:
         id=msg.get('actor_id', False)
         if id not in user_id and id:
             user_id.append(id)
+    user_id.remove("channel1640165484")
+    user_id.remove("channel1474589327")
     return user_id
 data=read_data('data/result.json')
 print(find_all_users_id(data))
